@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="keywords" content="pink, взгляните на жизнь иначе">
+    <meta name="description" content="Pink-сервис для съёмки с розовым фильтром">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTML Academy: Пинк</title>
+    <link rel="preload" href="./fonts/opensans.woff" as="font" />
+    <link rel="preload" href="./fonts/opensans.woff2" as="font" />
+    <link rel="preload" href="./fonts/opensansbold.woff" as="font" />
+    <link rel="preload" href="./fonts/opensansbold.woff2" as="font" />
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+  <header class="header">
+    <a class="header__logo">
+      <picture>
+        <source srcset="./img/logoDesktop.svg" media="(min-width: 1150px)">
+        <source srcset="./img/logoTablet.svg" media="(min-width: 768px)">
+        <img class="header__logo-image" src="img/logoMobile.svg" alt="Логотип сайта">
+      </picture>
+    </a>
+    <nav class="header__navigation navigation">
+      <div class="navigation__wrapper">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="navigation__list">
+
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Главная</a>
+          </li>
+
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Фотографии</a>
+          </li>
+
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Конкурс</a>
+          </li>
+
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Html academy</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="catalog">
+    <section class="catalog-promo">
+      <h1 class="catalog-promo__heading">Фотографии пользователей</h1>
+    </section>
+
+    <section class="catalog-title">
+      <h2 class="catalog-title__heading">Взгляните на фотографии, которые выкладывают пользователи!
+        Видите, как не хватает ваших?</h2>
+    </section>
+
+    <section class="catalog-photo">
+
+      <ul class="catalog-photo__list">
+        <li class="catalog-photo__item">
+          <img class="catalog-photo__item-image catalog-photo__item-image--ponoram" src="./img/..." alt="Панорама дня">
+          <h3 class="catalog-photo__item-heading">Анна<span class="catalog-photo__item-time">(5 минут назад)</span></h3>
+          <p class="catalog-photo__item-description">Прыгать или нет? Напишите в
+            комментарии свой совет и
+            смотрите прямую трансляцию в
+            перископе, задавайте свои вопросы!</p>
+          <p class="catalog-photo__item-likes">Нравится: 215</p>
+        </li>
+        <li class="catalog-photo__item">
+          <img class="catalog-photo__item-image catalog-photo__item-image--ponoram" src="./img/..." alt="Панорама дня">
+          <h3 class="catalog-photo__item-heading">Левон<span class="catalog-photo__item-time">(5 часов назад)</span></h3>
+          <p class="catalog-photo__item-description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <p class="catalog-photo__item-likes">Нравится: 356</p>
+        </li>
+        <li class="catalog-photo__item">
+          <img class="catalog-photo__item-image catalog-photo__item-image--ponoram" src="./img/..." alt="Панорама дня">
+          <h3 class="catalog-photo__item-heading">Антон<span class="catalog-photo__item-time">(12 часов назад)</span></h3>
+          <p class="catalog-photo__item-description">Соседи будут рады!</p>
+          <p class="catalog-photo__item-likes">Нравится: 666</p>
+        </li>
+        <li class="catalog-photo__item">
+          <img class="catalog-photo__item-image catalog-photo__item-image--ponoram" src="./img/..." alt="Панорама дня">
+          <h3 class="catalog-photo__item-heading">Борис<span class="catalog-photo__item-time">(20 часов назад)</span></h3>
+          <p class="catalog-photo__item-description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <p class="catalog-photo__item-likes">Нравится: 215</p>
+        </li>
+        <li class="catalog-photo__item">
+          <img class="catalog-photo__item-image catalog-photo__item-image--ponoram" src="./img/..." alt="Панорама дня">
+          <h3 class="catalog-photo__item-heading">Сергей<span class="catalog-photo__item-time">(25 часов назад)</span></h3>
+          <p class="catalog-photo__item-description">Самая кубанская в мире!</p>
+          <p class="catalog-photo__item-likes">Нравится: 4</p>
+        </li>
+        <li class="catalog-photo__item">
+          <img class="catalog-photo__item-image catalog-photo__item-image--ponoram" src="./img/..." alt="Панорама дня">
+          <h3 class="catalog-photo__item-heading">Максим<span class="catalog-photo__item-time">(40 часов назад)</span></h3>
+          <p class="catalog-photo__item-description">Где снег-то?</p>
+          <p class="catalog-photo__item-likes">Нравится: 150</p>
+        </li>
+        <li class="catalog-photo__item">
+          <img class="catalog-photo__item-image catalog-photo__item-image--ponoram" src="./img/..." alt="Панорама дня">
+          <h3 class="catalog-photo__item-heading">Надежда<span class="catalog-photo__item-time">(45 часов назад)</span></h3>
+          <p class="catalog-photo__item-description">Всем GM и взаимные лайки!</p>
+          <p class="catalog-photo__item-likes">Нравится: 2560</p>
+        </li>
+      </ul>
+      <h2 class="catalog-photo__heading-bottom">
+        Затмите их всех!
+  Выкладывайте все, что накопилось в телефоне!
+      </h2>
+    </section>
+    <section class="catalog-edit">
+      <img src="./img/..." alt="фото для редактирования">
+      <ul class="catalog-edit__list">
+        <li class="catalog-edit__item">svg</li>
+        <li class="catalog-edit__item">svg</li>
+        <li class="catalog-edit__item">svg</li>
+      </ul>
+      <div class="catalog-edit__range">
+        <div class="catalog-edit__range-point">
+
+        </div>
+      </div>
+      <button type="button">Запостить</button>
+      <button type="button">Отмена</button>
+    </section>
+  </main>
+  <footer class="footer">
+    <a class="footer__logo" href="#">
+      <picture>
+        <source srcset="./img/logoDesktop.svg" media="(min-width: 1150px)">
+        <source srcset="./img/logoTablet.svg" media="(min-width: 768px)">
+        <img class="footer__logo-image" src="img/logoMobile.svg" alt="Логотип сайта">
+      </picture>
+    </a>
+    <ul class="footer__list-social">
+      <li class="footer__item-social"></li>
+      <li class="footer__item-social"></li>
+      <li class="footer__item-social"></li>
+    </ul>
+    <p class="footer__develops-description">Разработано
+      <a class="footer__develops-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg width="27" height="35" class="footer__develops-link-icon" viewBox="0 0 27 35" fill="#"
+          xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./img/sprite.svg#htmlacademy"></use>
+        </svg>
+      </a>
+    </p>
+  </footer>
+  </body>
+</html>

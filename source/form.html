@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="keywords" content="pink, взгляните на жизнь иначе">
+    <meta name="description" content="Pink-сервис для съёмки с розовым фильтром">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTML Academy: Пинк</title>
+    <link rel="preload" href="./fonts/opensans.woff" as="font" />
+    <link rel="preload" href="./fonts/opensans.woff2" as="font" />
+    <link rel="preload" href="./fonts/opensansbold.woff" as="font" />
+    <link rel="preload" href="./fonts/opensansbold.woff2" as="font" />
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__logo">
+        <picture>
+          <source srcset="./img/logoDesktop.svg" media="(min-width: 1150px)">
+          <source srcset="./img/logoTablet.svg" media="(min-width: 768px)">
+          <img class="header__logo-image" src="img/logoMobile.svg" alt="Логотип сайта">
+        </picture>
+      </a>
+      <nav class="header__navigation navigation">
+        <div class="navigation__wrapper">
+          <button class="navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="navigation__list">
+
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Главная</a>
+            </li>
+
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Фотографии</a>
+            </li>
+
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Конкурс</a>
+            </li>
+
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Html academy</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="filters">
+
+      <section class="filters-title">
+        <h2 class="filters-title__heading">Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?</h2>
+      </section>
+
+      <form class="form-order"action="https://echo.htmlacademy.ru" method="POST" enctype="multipart/form-data" autocomplete="off">
+        <h2 class="form-order__heading">Поделитесь своей историей и получите
+          шанс выиграть ценный приз — 1000
+          миль на вашу бонусную карту!</h2>
+          <section class="form-order__group">
+            <fieldset class="form-order__fieldset-text">
+              <label class="form-order__label-text" for="lastname">Фамилия</label>
+              <input type="text" name="lastname" id="lastname" placeholder="Укажите фамилию *">
+              <label class="form-order__label-text" for="firstname">Имя</label>
+              <input type="text" name="firstname" id="firstname" placeholder="Введите ваше имя *">
+              <label class="form-order__label-text" for="patronymic">Отчество</label>
+              <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+            </fieldset>
+          </section>
+          <section class="form-order__group">
+            <h2 class="form-order__heading-checkbox">Ваши безбашенные
+              достижения в путешествии</h2>
+              <div class="checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="selfi" id="selfi" checked>
+                <label class="checkbox__label" for="selfi">
+                  <span class="checkbox__label-text">Сделал селфи с акулой</span>
+              </label>
+              </div>
+              <div class="checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="fire" id="fire" checked>
+                <label class="checkbox__label" for="fire">
+                  <span class="checkbox__label-text">Обгорел на пляже</span>
+              </label>
+              </div>
+              <div class="checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="chack" id="chack" checked>
+                <label class="checkbox__label" for="chack">
+                  <span class="checkbox__label-text">Видел Чака Норриса</span>
+              </label>
+              </div>
+              <div class="checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="souvenir" id="souvenir" checked>
+                <label class="checkbox__label" for="souvenir">
+                  <span class="checkbox__label-text">Накупил сувениров</span>
+              </label>
+              </div>
+              <div class="checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="tower" id="tower" checked>
+                <label class="checkbox__label" for="tower">
+                  <span class="checkbox__label-text">Удержал башню</span>
+              </label>
+              </div>
+              <div class="checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="tower" id="tower" checked>
+                <label class="checkbox__label" for="tower">
+                  <span class="checkbox__label-text">Разгромил отель</span>
+              </label>
+              </div>
+          </section>
+          <section class="form-order__group form-order__group--contacts">
+            <label for="telephone">Номер телефона</label>
+            <input type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
+            <label for="email">Адрес почты</label>
+            <input type="email" name="email" id="email" placeholder="Введите почту *">
+          </section>
+          <section class="form-order__group form-order__group--radio">
+            <h2 class="form-order__heading-radio">С каким приложением
+              путешествовали?</h2>
+              <div class="radio">
+                <input type="radio" name="radiopink" id="iOS">
+                <label for="iOS">Pink для iOS</label>
+              </div>
+              <div class="radio">
+                <input type="radio" name="radiopink" id="Android">
+                <label for="Android">Pink на Android</label>
+              </div>
+              <div class="radio">
+                <input type="radio" name="radiopink" id="Windows">
+                <label for="Windows">Windows Phone</label>
+              </div>
+          </section>
+          <section class="form-order__group form-order__group==textarea">
+            <h2 class="form-order__heading-textarea">Опишите свои эмоции</h2>
+            <label for="textarea"></label>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Можно прям в красках, не
+            стесняясь в выражениях"></textarea>
+          </section>
+          <button type="submit">Отправить форму</button>
+          <p class="form-order__description">* — обязательные поля</p>
+      </form>
+
+    </main>
+
+    <footer class="footer">
+      <a class="footer__logo" href="#">
+        <picture>
+          <source srcset="./img/logoDesktop.svg" media="(min-width: 1150px)">
+          <source srcset="./img/logoTablet.svg" media="(min-width: 768px)">
+          <img class="footer__logo-image" src="img/logoMobile.svg" alt="Логотип сайта">
+        </picture>
+      </a>
+      <ul class="footer__list-social">
+        <li class="footer__item-social"></li>
+        <li class="footer__item-social"></li>
+        <li class="footer__item-social"></li>
+      </ul>
+      <p class="footer__develops-description">Разработано
+        <a class="footer__develops-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg width="27" height="35" class="footer__develops-link-icon" viewBox="0 0 27 35" fill="#"
+            xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#htmlacademy"></use>
+          </svg>
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
