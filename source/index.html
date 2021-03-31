@@ -1,12 +1,197 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta name="keywords" content="pink, взгляните на жизнь иначе">
+    <meta name="description" content="Pink-сервис для съёмки с розовым фильтром">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link rel="preload" href="./fonts/opensans.woff" as="font" />
+    <link rel="preload" href="./fonts/opensans.woff2" as="font" />
+    <link rel="preload" href="./fonts/opensansbold.woff" as="font" />
+    <link rel="preload" href="./fonts/opensansbold.woff2" as="font" />
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <header class="header">
+      <a class="header__logo">
+        <picture>
+          <source srcset="./img/logoDesktop.svg" media="(min-width: 1150px)">
+          <source srcset="./img/logoTablet.svg" media="(min-width: 768px)">
+          <img class="header__logo-image" src="img/logoMobile.svg" alt="Логотип сайта">
+        </picture>
+      </a>
+      <nav class="header__navigation navigation">
+        <div class="navigation__wrapper">
+          <button class="navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="navigation__list">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Главная</a>
+            </li>
+
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Фотографии</a>
+            </li>
+
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Конкурс</a>
+            </li>
+
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Html academy</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-section">
+
+      <section class="intro">
+        <h1 class="intro__heading">
+          Взгляните на жизнь иначе!
+        </h1>
+        <label class="intro__label visually-hidden" for="download-file"></label>
+        <input class="intro__button" type="file" id="download-file">Скачать приложение</input>
+        <ul class="intro__list">
+          <li class="intro__item">
+            <img src="./img/" alt="For iphone">
+          </li>
+
+          <li class="intro__item">
+            <img src="./img/" alt="For android">
+          </li>
+
+          <li class="intro__item">
+            <img src="./img/" alt="For microsoft">
+          </li>
+        </ul>
+        <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <section class="slogans">
+        <h2 class="slogans__heading">
+          Устали от серости мегаполиса?
+        </h2>
+
+        <h2 class="slogans__heading">
+          Нам есть, что вам предложить!
+        </h2>
+      </section>
+      <section class="information">
+        <ul class="information__list">
+          <li class="information__item">
+            <h3 class="information__item-heading">
+              Поднимает настроение
+            </h3>
+            <p class="information__item-description">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
+          </li>
+          <li class="information__item">
+            <h3 class="information__item-heading">
+              Меняет мир вокруг
+            </h3>
+            <p class="information__item-description">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
+          </li>
+          <li class="information__item">
+            <h3 class="information__item-heading">
+              Заводит новых друзей
+            </h3>
+            <p class="information__item-description">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </li>
+        </ul>
+        <img class="information__image" src="./img/" alt="iphone 3">
+        <div class="information__slider slider">
+          <ul class="slider__list">
+            <li class="slider__item">
+              <h3 class="slider__item-heading">Николай Петров</h3>
+              <p class="slider__item-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+            <li class="slider__item">
+              <h3 class="slider__item-heading"></h3>
+              <p class="slider__item-description"></p>
+            </li>
+            <li class="slider__item">
+              <h3 class="slider__item-heading"></h3>
+              <p class="slider__item-description"></p>
+            </li>
+          </ul>
+          <ul class="slider__list-point">
+            <li class="slider__item-point"></li>
+            <li class="slider__item-point"></li>
+            <li class="slider__item-point"></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="price">
+        <div class="price-slider">
+          <ul class="price-slider__list">
+            <li class="price-slider__item-main">
+              <h3 class="price-slider__item-heading">Стандарт</h3>
+              <p class="price-slider__item-description">3,99 USD</p>
+            </li>
+            <li class="price-slider__item">Розовый фильтр</li>
+            <li class="price-slider__item">Смайлики</li>
+            <li class="price-slider__item">Комментарии</li>
+          </ul>
+          <ul class="price-slider__points__list">
+            <li class="price-slider__points__item"></li>
+            <li class="price-slider__points__item"></li>
+            <li class="price-slider__points__item"></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <h2 class="contacts__heading">Остались вопросы? Свяжитесь с нами!</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <h3 class="contacts__item-heading">Звоните:</h3>
+            <a class="contacts__item-link" href="tel:+7 (812) 555-66-66">+7 (812) 555-66-66</a>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__item-heading">Пишите:</h3>
+            <a class="contacts__item-link" href="#">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__item-heading">Приезжайте в гости:</h3>
+            <address class="contacts__item-link" href="#">+7 (812) 555-66-66</address>
+          </li>
+        </ul>
+        <div class="contacts-map">
+
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="footer__logo" href="#">
+        <picture>
+          <source srcset="./img/logoDesktop.svg" media="(min-width: 1150px)">
+          <source srcset="./img/logoTablet.svg" media="(min-width: 768px)">
+          <img class="footer__logo-image" src="img/logoMobile.svg" alt="Логотип сайта">
+        </picture>
+      </a>
+      <ul class="footer__list-social">
+        <li class="footer__item-social"></li>
+        <li class="footer__item-social"></li>
+        <li class="footer__item-social"></li>
+      </ul>
+      <p class="footer__develops-description">Разработано
+        <a class="footer__develops-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg width="27" height="35" class="footer__develops-link-icon" viewBox="0 0 27 35" fill="#"
+            xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#htmlacademy"></use>
+          </svg>
+        </a>
+      </p>
+    </footer>
 
   </body>
 </html>
