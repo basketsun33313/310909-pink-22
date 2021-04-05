@@ -9,15 +9,17 @@
     <link rel="preload" href="./fonts/opensans.woff2" as="font" />
     <link rel="preload" href="./fonts/opensansbold.woff" as="font" />
     <link rel="preload" href="./fonts/opensansbold.woff2" as="font" />
+    <link rel="preload" href="./fonts/opensanslight.woff" as="font" />
+    <link rel="preload" href="./fonts/opensanslight.woff2" as="font" />
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="body">
     <header class="header">
       <a class="header__logo">
         <picture>
           <source srcset="./img/logoDesktop.svg" media="(min-width: 1150px)">
           <source srcset="./img/logoTablet.svg" media="(min-width: 768px)">
-          <img class="header__logo-image" src="img/logoMobile.svg" alt="Логотип сайта">
+          <img class="header__logo-image" src="img/logomobile.svg" alt="Логотип сайта">
         </picture>
       </a>
       <nav class="header__navigation navigation">
@@ -50,8 +52,9 @@
     <main class="main-section">
 
       <section class="intro">
+
         <h1 class="intro__heading">
-          Взгляните на жизнь иначе!
+          <span class="intro__heading-text">Взгляните на жизнь иначе!</span>
         </h1>
         <label class="intro__label visually-hidden" for="download-file"></label>
         <button class="intro__button" type="button" id="download-file">Скачать приложение</button>
@@ -106,7 +109,7 @@
             </p>
           </li>
         </ul>
-        <img class="information__image" src="./img/iphone 3.jpg" alt="iphone 3">
+        <img class="information__image" src="./img/iphone-3.png" alt="iphone 3">
       </section>
       <div class="slider">
         <ul class="slider__list">
