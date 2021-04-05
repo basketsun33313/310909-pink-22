@@ -1,0 +1,87 @@
+.price-slider {
+  .indents-null();
+  list-style: none;
+}
+
+.price-slider__item-main {
+  background-color: #283645;
+}
+
+.price-slider__item-heading {
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  color: white;
+  text-align: left;
+}
+
+.price-slider__item-description {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+
+.price-slider__item {
+  color: #283645;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.price-slider__item--yes {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 31px;
+    height: 21px;
+    top: 0;
+    right: 0;
+    background-image: url('../img/yes.svg');
+  }
+}
+
+.price-slider__item--no {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    top: 0;
+    right: 0;
+    background-image: url('../img/no.svg');
+  }
+}
+
+.price-slider__points-list {
+  .indents-null();
+  margin-top: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-slider__points-item {
+  width: 6px;
+  height: 6px;
+  background-color: #283645;
+  border-radius: 50%;
+  margin-right: 19px;
+  opacity: 0.3;
+}
+
+.price-slider__points-item--active {
+  background-color: transparent;
+  border: 3px solid #283645;
+  opacity: 1;
+}
