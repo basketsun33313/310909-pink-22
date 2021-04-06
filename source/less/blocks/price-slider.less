@@ -1,24 +1,61 @@
+.price {
+  position: relative;
+  background-color: #f2f2f2;
+  padding-top: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: url("../img/grey-background.jpg") no-repeat top center;
+    background-size: cover;
+    z-index: -1;
+  }
+}
+
 .price-slider {
   .indents-null();
   list-style: none;
 }
 
+.price-slider__item {
+  background-color: white;
+  border: 2px solid #E5E5E5;
+  border-radius: 1px 0px 0px 0px;
+  padding: 24px 0 25px 20px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
 .price-slider__item-main {
   background-color: #283645;
+  border-left: 2px solid #f2f2f2;
+  border-right: 2px solid #f2f2f2;
 }
 
 .price-slider__item-heading {
   padding: 0;
   margin: 0;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
   color: white;
-  text-align: left;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .price-slider__item-description {
+  .indents-null();
+  font-family: "Open Sans Light", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -31,7 +68,6 @@
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  margin-top: 20px;
 }
 
 .price-slider__item--yes {
@@ -42,8 +78,8 @@
     position: absolute;
     width: 31px;
     height: 21px;
-    top: 0;
-    right: 0;
+    top: 20px;
+    right: 20px;
     background-image: url('../img/yes.svg');
   }
 }
@@ -56,8 +92,8 @@
     position: absolute;
     width: 27px;
     height: 27px;
-    top: 0;
-    right: 0;
+    top: 20px;
+    right: 20px;
     background-image: url('../img/no.svg');
   }
 }
@@ -69,9 +105,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 40px;
 }
 
 .price-slider__points-item {
+
+}
+
+.price-slider__points-item--active {
+
+}
+
+.price-slider__points-link {
+  display: block;
   width: 6px;
   height: 6px;
   background-color: #283645;
@@ -80,7 +126,7 @@
   opacity: 0.3;
 }
 
-.price-slider__points-item--active {
+.price-slider__points-link--active {
   background-color: transparent;
   border: 3px solid #283645;
   opacity: 1;
