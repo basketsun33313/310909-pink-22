@@ -4,8 +4,6 @@
   background-color: #f2f2f2;
   margin-top: 75px;
 
-
-
   &::before {
     content: "";
     position: absolute;
@@ -53,6 +51,7 @@
 }
 
 .information__item-heading {
+  .indents-null();
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -61,6 +60,7 @@
 }
 
 .information__item-description {
+  .indents-null();
   width: 280px;
   margin: 0 auto;
   font-style: normal;
@@ -75,4 +75,73 @@
 .information__image {
   display: block;
   margin: 0 auto;
+}
+
+
+@media (min-width: @tablet-width) {
+  .information {
+    position: relative;
+    margin: 0;
+  }
+
+  .information__wrapper {
+    padding-top: 70px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 96px;
+      left: 5.4%;
+      width: 237px;
+      height: 421px;
+      background: url("../img/iphone-screen-3.jpg") no-repeat;
+      background-size: 100%;
+      z-index: 2;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 37px;
+      left: 3%;
+      width: 264px;
+      height: 547px;
+      background: url("../img/iphone-3.png") no-repeat;
+      background-size: 100%;
+      z-index: 1;
+    }
+  }
+
+  .information__list {
+    padding-bottom: 0;
+    width: 100%;
+    margin-left: 165px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .information__item-heading {
+    .indents-null();
+    padding-bottom: 24px;
+    margin-right: 108px;
+    font-family: "Open Sans Bold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .information__item-description {
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    padding-bottom: 20px;
+    margin-left: 150px;
+  }
 }
