@@ -1,7 +1,32 @@
 .intro {
   margin-top: 7px;
-  background-color: #1D2631;
   text-align: center;
+  background-color: #1D2631;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   top: -66px;
+  //   left: 0;
+  //   background: url("../img/back-mobile.jpg") no-repeat top center;
+  //   background-size: cover;
+  //   background-color: black;
+  //   padding-top: 66px;
+  // }
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   display: block;
+  //   bottom: 0;
+  //   left: 50%;
+  //   width: 320px;
+  //   height: 286px;
+  //   background: url("../img/phone-hand.png") no-repeat bottom center;
+  //   margin-left: -160px;
+  // }
 }
 
 .intro__heading {
@@ -63,8 +88,8 @@
   border: 3px solid white;
   border-radius: 29px;
   background-color: transparent;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin-bottom: 35px;
   cursor: pointer;
 }
@@ -90,4 +115,103 @@
   line-height: 24px;
   color: white;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .intro {
+    position: relative;
+    padding-left: 20px;
+
+    &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -66px;
+    left: 0;
+    background: url("../img/back-tablet.jpg") no-repeat top center;
+    background-size: cover;
+    background-color: black;
+    padding-top: 66px;
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 50%;
+    width: 660px;
+    height: 545px;
+    background: url("../img/phone-tablet.png") no-repeat bottom center;
+    margin-left: -330px;
+    z-index: 10;
+  }
+}
+
+  .intro__wrapper {
+    z-index: 20;
+    position: relative;
+    width: 40%;
+    padding-top: 80px;
+    padding-left: 2px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 195px;
+      height: 346px;
+      top: 117px;
+      left: 352px;
+      background: url("../img/screen.png") no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  .intro__heading {
+    padding: 0;
+    margin-left: 35px;
+
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .intro__heading-text {
+    width: 230px;
+    font-family: "Open Sans Light";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 120%;
+  }
+
+  .intro__button {
+    width: 300px;
+    margin-bottom: 47px;
+    font-family: "Open Sans Bold";
+
+  }
+
+  .intro__list {
+    margin-left: -34px;
+    margin-bottom: 10px;
+  }
+
+  .intro__description {
+    font-family: "Open Sans Light";
+    width: 300px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 118px;
+  }
 }
