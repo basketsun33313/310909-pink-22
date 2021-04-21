@@ -5,6 +5,7 @@
 
 .filters-title__heading {
   .indents-null();
+  font-family: "Open Sans Light";
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -29,6 +30,21 @@
   padding: 23px 0;
   cursor: pointer;
   margin-bottom: 46px;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: #1C9B5E;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3)
+  }
+
+  &:disabled {
+    background-color: #E5E5E5;
+  }
 }
 
 .filters__description {
@@ -48,4 +64,16 @@
 
 .filters__description::first-letter {
   color: green;
+}
+
+@media (min-width: @tablet-width) {
+  .filters-title__heading {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .filters__button-submit {
+    width: 296px;
+    margin: 0;
+  }
 }

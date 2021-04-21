@@ -85,3 +85,33 @@
   margin-top: 49px;
   margin-bottom: 52px;
 }
+
+@media (min-width: @tablet-width) {
+  .catalog-photo__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .catalog-photo__item:not(:first-child) {
+    width: 50%;
+  }
+
+  .catalog-photo__item-description--indent {
+    padding-bottom: 24px;
+  }
+
+  .catalog-photo__wrapper-background {
+    padding: 0 10px;
+  }
+
+  .catalog-photo__heading-bottom {
+    width: 422px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

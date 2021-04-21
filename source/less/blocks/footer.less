@@ -27,6 +27,12 @@
   padding-bottom: 15px;
   padding-left: 17px;
   padding-right: 16px;
+
+  &:hover .footer__item-social,
+  &:focus .footer__item-social {
+    outline: none;
+    border-color: red;
+  }
 }
 
 .footer__icon-social {
@@ -47,4 +53,24 @@
   width: 27px;
   height: 34px;
   fill: #D22856;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    fill: #283645;
+  }
+
+  &:active {
+    fill: #283645;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

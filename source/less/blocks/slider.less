@@ -54,6 +54,17 @@
   border-radius: 50%;
   margin-right: 19px;
   opacity: 0.3;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: #283645;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .slider__link-point--active {
@@ -104,5 +115,7 @@
     padding-bottom: 20px;
   }
 
-
+  .slider__list-point {
+    margin-top: 45px;
+  }
 }
