@@ -1,5 +1,6 @@
 .form-order__heading {
   .indents-null();
+  padding: 0 20px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -9,29 +10,10 @@
   margin-bottom: 55px;
 }
 
-.form-order__fieldset-text {
-  border: none;
-}
-
-.form-order__label-text {
-  display: block;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  color: #D22856;
-  margin-bottom: 14px;
-}
-
-.form-order__input-text {
-  width: 100%;
-  padding: 20px 0 20px 20px;
-  margin-bottom: 29px;
-  border: 2px solid #E5E5E5;
-  border-radius: 1px;
-}
-
 .form-order__heading-checkbox {
   .indents-null();
+  width: 218px;
+  margin: 0 auto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -39,6 +21,7 @@
   color: #D22856;
   text-align: center;
   margin-bottom: 51px;
+  text-transform: uppercase;
 }
 
 .form-order__group-checkbox {
@@ -53,24 +36,6 @@
   padding-bottom: 44px;
 }
 
-.form-order__label-text-contacts {
-  display: block;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  color: #D22856;
-  margin-bottom: 17px;
-  margin-left: 25px;
-}
-
-.form-order__input-text-contacts {
-  width: 100%;
-  padding: 20px 0 20px 20px;
-  margin-bottom: 29px;
-  border: 2px solid #E5E5E5;
-  border-radius: 1px;
-}
-
 .form-order__group--radio {
   background: #F2F2F2;
   padding-top: 42px;
@@ -79,6 +44,8 @@
 
 .form-order__heading-radio {
   .indents-null();
+  width: 178px;
+  margin: 0 auto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -86,6 +53,7 @@
   color: #D22856;
   text-align: center;
   margin-bottom: 52px;
+  text-transform: uppercase;
 }
 
 .form-order__group--textarea {
@@ -94,10 +62,141 @@
 
 .form-order__heading-textarea {
   .indents-null();
+  margin: 0 auto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   color: #D22856;
   margin-bottom: 22px;
   text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .form-order__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-order__heading {
+    width: 490px;
+    margin: 0 auto;
+    padding-top: 91px;
+    padding-bottom: 71px;
+    position: relative;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+
+    &::after {
+      content: "Пожалуйста, заполните форму ниже:";
+      position: absolute;
+      top: 151px;
+      left: 50%;
+      width: 370px;
+      height: 20px;
+      font-family: "Open Sans";
+      font-size: 18px;
+      transform: translateX(-50%);
+    }
+  }
+
+  .form-order__group--input {
+    order: -3;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 22px;
+  }
+
+  .form-order__wrapper-border--radio {
+    padding: 0 20px;
+    order: -2;
+    margin-bottom: 24px;
+  }
+
+  .form-order__group--radio {
+    background-color: white;
+    padding-top: 0;
+    border: 2px solid #E5E5E5;
+    border-radius: 1px;
+  }
+
+  .form-order__heading-radio {
+    width: 369px;
+    background-color: white;
+    margin-top: -11px;
+    margin-bottom: 62px;
+  }
+
+  .form-order__wrapper-border--contacts {
+    padding: 0 20px;
+    order: -1;
+    margin-bottom: 24px;
+  }
+
+  .form-order__group--contacts {
+    position: relative;
+    border: 2px solid #E5E5E5;
+    border-radius: 1px;
+
+    &::before {
+      content: "контактная информация";
+      position: absolute;
+      top: -11px;
+      left: 50%;
+      width: 260px;
+      height: 10px;
+      font-family: "open Sans";
+      font-size: 14px;
+      background-color: white;
+      text-align: center;
+      color: #D22856;
+      text-transform: uppercase;
+      transform: translateX(-50%);
+    }
+  }
+
+  .form-order__wrapper-border--checkbox {
+    padding: 0 20px;
+    margin-bottom: 51px;
+  }
+
+  .form-order__group-checkbox {
+    background-color: white;
+    border: 2px solid #E5E5E5;
+    border-radius: 1px;
+  }
+
+  .form-order__heading-checkbox {
+    width: 440px;
+    margin-top: -53px;
+    background-color: white;
+  }
+
+  .form-order__wrapper-border--textarea {
+    padding: 0 20px;
+    margin-bottom: 70px;
+  }
+
+  .form-order__group--textarea {
+    border: 2px solid #E5E5E5;
+    border-radius: 1px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .form-order__heading-textarea {
+    width: 260px;
+    margin-top: -52px;
+    background-color: white;
+  }
+
+  .form-order__wrapper-button {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

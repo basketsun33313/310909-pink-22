@@ -25,6 +25,10 @@
       <nav class="header__navigation navigation">
         <div class="navigation__wrapper">
           <button class="navigation__toggle" type="button">
+            <svg width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.8487 1.37761e-06L0 20.8487L2.15131 23L23 2.15131L20.8487 1.37761e-06Z"/>
+              <path d="M2.15131 0L0 2.15131L20.8487 23L23 20.8487L2.15131 0Z"/>
+              </svg>
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="navigation__list">
@@ -99,7 +103,7 @@
                 Меняет мир вокруг
               </h3>
               <p class="information__item-description">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br> усилить эффект
               </p>
             </li>
             <li class="information__item">
@@ -216,7 +220,7 @@
           </li>
           <li class="contacts__item">
             <h3 class="contacts__item-heading">Пишите:</h3>
-            <a class="contacts__item-link" href="#">mail@htmlacademy.ru</a>
+            <a class="contacts__item-link contacts__item-link--email" href="#">mail@htmlacademy.ru</a>
           </li>
           <li class="contacts__item">
             <h3 class="contacts__item-heading">Приезжайте в гости:</h3>
@@ -225,7 +229,11 @@
           </li>
         </ul>
         <div class="contacts-map">
-
+          <picture>
+            <source srcset="img/map-desktop.png" media="(min-width: 1150px)">
+            <source srcset="img/map-tablet.png" media="(min-width: 680px)">
+            <img class="contacts-map__image" src="img/map-mobile.png" alt="Мы на карте">
+          </picture>
         </div>
       </section>
     </main>

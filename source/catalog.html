@@ -18,7 +18,7 @@
     <a class="header__logo">
       <picture>
         <source srcset="./img/logoDesktop.svg" media="(min-width: 1150px)">
-        <source srcset="./img/logoTablet.svg" media="(min-width: 768px)">
+        <source srcset="./img/logoTablet.svg" media="(min-width: 680px)">
         <img class="header__logo-image" src="img/logomobile.svg" alt="Логотип сайта">
       </picture>
     </a>
@@ -90,7 +90,7 @@
             <img class="catalog-photo__item-image" src="./img/photo-2-mobile.jpg" alt="Панорама дня">
             <div class="catalog-photo__wrapper-text">
               <h3 class="catalog-photo__item-heading">Антон<span class="catalog-photo__item-time">(12 часов назад)</span></h3>
-              <p class="catalog-photo__item-description">Соседи будут рады!</p>
+              <p class="catalog-photo__item-description catalog-photo__item-description--indent">Соседи будут рады!</p>
               <p class="catalog-photo__item-likes">Нравится: 666</p>
             </div>
           </div>
@@ -110,7 +110,7 @@
             <img class="catalog-photo__item-image" src="./img/photo-4-mobile.jpg" alt="Панорама дня">
             <div class="catalog-photo__wrapper-text">
               <h3 class="catalog-photo__item-heading">Сергей<span class="catalog-photo__item-time">(25 часов назад)</span></h3>
-              <p class="catalog-photo__item-description">Самая кубанская в мире!</p>
+              <p class="catalog-photo__item-description catalog-photo__item-description--indent">Самая кубанская в мире!</p>
               <p class="catalog-photo__item-likes">Нравится: 4</p>
             </div>
           </div>
@@ -137,15 +137,14 @@
         </li>
       </ul>
       <h2 class="catalog-photo__heading-bottom">
-        Затмите их всех!<br>
-  Выкладывайте все, что накопилось в <br>телефоне!
+        Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!
       </h2>
     </section>
     <section class="catalog-edit">
       <img class="catalog-edit__image-big" src="./img/photo-7-mobile.png" alt="фото для редактирования">
       <ul class="catalog-edit__list">
         <li class="catalog-edit__item">
-          <svg class="catalog-edit__item-icon" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+          <svg class="catalog-edit__item-icon catalog-edit__item-icon--active" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
             <path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z"/>
           </svg>
         </li>
@@ -167,6 +166,16 @@
         </li>
       </ul>
       <div class="catalog-edit__range">
+        <div class="catalog-edit__range-point">
+
+        </div>
+      </div>
+      <div class="catalog-edit__range catalog-edit__range--dontmobile">
+        <div class="catalog-edit__range-point">
+
+        </div>
+      </div>
+      <div class="catalog-edit__range catalog-edit__range--dontmobile">
         <div class="catalog-edit__range-point">
 
         </div>

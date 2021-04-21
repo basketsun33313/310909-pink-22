@@ -1,0 +1,157 @@
+.input__label {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #D22856;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.input__text {
+  width: 90%;
+  padding: 20px 0 20px 20px;
+  margin-bottom: 29px;
+  border: 2px solid #E5E5E5;
+  border-radius: 1px;
+
+  &:hover,
+  &:focus {
+    border-color: #283645;
+  }
+
+  &:active {
+    border-color: #D22856;
+  }
+}
+
+.input__label-tel {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #D22856;
+  margin-bottom: 17px;
+  margin-left: 25px;
+  text-transform: uppercase;
+}
+
+.input__text-tel {
+  width: 90%;
+  padding: 19px 0 20px 20px;
+  margin-bottom: 29px;
+  border: 2px solid #E5E5E5;
+  border-radius: 1px;
+
+  &:hover,
+  &:focus {
+    border-color: #283645;
+  }
+
+  &:active {
+    border-color: #D22856;
+  }
+}
+
+.input__label-email {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #D22856;
+  margin-bottom: 17px;
+  margin-left: 25px;
+  text-transform: uppercase;
+}
+
+.input__text-email {
+  width: 90%;
+  padding: 19px 0 20px 20px;
+  margin-bottom: 29px;
+  border: 2px solid #E5E5E5;
+  border-radius: 1px;
+
+  &:hover,
+  &:focus {
+    border-color: #283645;
+  }
+
+  &:active {
+    border-color: #D22856;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 23px;
+    padding-top: 3px;
+  }
+
+  .input__label {
+    margin-right: 20px;
+  }
+
+  .input__text {
+    font-size: 18px;
+  }
+
+  .input__tel {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding-left: 60px;
+    padding-right: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      right: 60px;
+      width: 59px;
+      height: 59px;
+      background-color: #E5E5E5;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      right: 79px;
+      width: 20px;
+      height: 19px;
+      background: url("../img/phone-icon.svg") no-repeat;
+    }
+  }
+
+  .input__email {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding-left: 60px;
+    padding-right: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      right: 60px;
+      width: 59px;
+      height: 59px;
+      background-color: #E5E5E5;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 29px;
+      right: 79px;
+      width: 18px;
+      height: 13px;
+      background: url("../img/mail-icon.svg") no-repeat;
+    }
+  }
+}

@@ -10,8 +10,18 @@
   height: 23px;
   border: none;
   background-color: transparent;
-  background-image: url(../img/closemenubtn.svg);
   cursor: pointer;
+  fill: white;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    fill: #D22856;
+  }
+
+  &:active {
+    outline: none;
+  }
 }
 
 .navigation__list {
@@ -38,6 +48,16 @@
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: #D22856;
+  }
+
+  &:active {
+    color: white;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {

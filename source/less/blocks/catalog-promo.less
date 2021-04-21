@@ -1,5 +1,6 @@
 .catalog-promo {
-  background: url("../img/back-mobile.jpg");
+  background: url("../img/back-mobile.jpg") no-repeat;
+  background-size: 100%;
   padding-top: 36px;
   padding-bottom: 84px;
 }
@@ -15,4 +16,19 @@
   line-height: 33px;
   text-align: center;
   color: white;
+}
+
+@media(min-width: @tablet-width) {
+  .catalog-promo {
+    padding-top: 81px;
+    padding-bottom: 143px;
+  }
+
+  .catalog-promo__heading {
+    width: 358px;
+    font-family: "Open Sans Light";
+    font-size: 50px;
+    line-height: 68px;
+    margin: 0 auto;
+  }
 }

@@ -35,6 +35,18 @@
   }
 }
 
+.checkbox__input:hover + .checkbox__label::before {
+  border-color: #283645;
+}
+
+.checkbox__input:focus + .checkbox__label::before {
+  outline: none;
+}
+
+.checkbox__input:active + .checkbox__label::before {
+  border-color: #D22856;
+}
+
 .checkbox__input:checked + .checkbox__label::after {
   display: block;
 }
@@ -43,3 +55,16 @@
   margin-left: 50px;
 }
 
+@media (min-width: @tablet-width) {
+  .checkbox__label {
+    margin-left: 48px;
+
+    &::before {
+      left: -9px;
+    }
+
+    &::after {
+      left: 0;
+    }
+  }
+}
