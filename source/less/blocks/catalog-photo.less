@@ -115,3 +115,19 @@
     line-height: 30px;
   }
 }
+
+@media(min-width: @desktop-width) {
+  .catalog-photo__list {
+    .indents-null();
+    justify-content: center;
+    align-items: center;
+  }
+
+  .catalog-photo__item-image--ponoram {
+    width: 100vw;
+  }
+
+  .catalog-photo__item:not(:first-child) {
+    width: 30%;
+  }
+}
