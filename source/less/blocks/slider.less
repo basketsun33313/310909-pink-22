@@ -119,3 +119,21 @@
     margin-top: 45px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .slider__item-heading {
+    font-size: 24px;
+
+    &::after {
+      width: 224px;
+      font-size: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .slider__item-description {
+    width: 688px;
+    margin: 0 auto;
+  }
+}

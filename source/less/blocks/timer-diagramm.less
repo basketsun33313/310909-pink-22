@@ -74,3 +74,36 @@
     margin-left: 331px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .timer-diagramm {
+
+    &::before {
+      width: 298px;
+      height: 345px;
+      background-size: 100%;
+      left: 131px;
+    }
+
+    &::after {
+      width: 220px;
+      height: 220px;
+      font-size: 120px;
+      left: 154px;
+      top: 124px;
+    }
+  }
+
+  .timer-diagramm__heading {
+    width: 300px;
+  }
+
+  .timer-diagramm__description {
+    width: 514px;
+    font-size: 18px;
+  }
+
+  .timer-diagramm__link {
+    font-size: 18px;
+  }
+}
