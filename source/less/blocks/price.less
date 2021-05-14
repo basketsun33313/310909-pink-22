@@ -13,12 +13,32 @@
   width: calc(100vw - 40px);
 }
 
+
 @media (min-width: @tablet-width) {
+  .price {
+    padding-bottom: 71px;
+  }
+
+  .price__wrapper {
+    padding-left: 20px;
+    display: flex;
+  }
+
+  .price-slider__text {
+    display: none;
+  }
+
   .price__list {
     margin: 0;
   }
 
   .price__item {
-    width: 200px;
+    width: 152px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price__item {
+    width: 233px;
   }
 }

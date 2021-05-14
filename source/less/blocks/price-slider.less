@@ -20,13 +20,14 @@
 .price-slider {
   .indents-null();
   list-style: none;
+  width: 281px;
 }
 
 .price-slider__item {
   background-color: white;
   border: 2px solid #E5E5E5;
   border-radius: 1px 0px 0px 0px;
-  padding: 24px 0 25px 20px;
+  padding: 18px 0 24px 21px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -40,6 +41,20 @@
   border-right: 2px solid #f2f2f2;
 }
 
+.price-slider__item-main--hit {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 74px;
+    height: 74px;
+    background: url("../img/hitribbon.svg") no-repeat;
+  }
+}
+
 .price-slider__item-heading {
   padding: 0;
   margin: 0;
@@ -51,6 +66,8 @@
   color: white;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 12px;
+  padding-bottom: 2px;
 }
 
 .price-slider__item-description {
@@ -61,6 +78,11 @@
   font-size: 18px;
   color: white;
   text-align: center;
+  padding-bottom: 33px;
+}
+
+.price-slider__text {
+  .indents-null();
 }
 
 .price-slider__item {
@@ -78,8 +100,8 @@
     position: absolute;
     width: 31px;
     height: 21px;
-    top: 20px;
-    right: 20px;
+    top: 17px;
+    right: 17px;
     background-image: url('../img/yes.svg');
   }
 }
@@ -92,8 +114,8 @@
     position: absolute;
     width: 27px;
     height: 27px;
-    top: 20px;
-    right: 20px;
+    top: 13px;
+    right: 18px;
     background-image: url('../img/no.svg');
   }
 }
@@ -105,7 +127,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 40px;
+  padding-bottom: 43px;
+  transform: translate(10px, -2px);
 }
 
 .price-slider__points-item {
@@ -134,4 +157,29 @@
 
 @media (min-width: @tablet-width) {
 
+  .price-slider {
+    width: 152px;
+  }
+
+  .price-slider__item-description {
+    padding-bottom: 14px;
+  }
+
+  .price-slider__item--yes {
+    &::after {
+      top: 10px;
+      right: 52px;
+    }
+  }
+
+  .price-slider__item--no {
+    &::after {
+      top: 9px;
+      right: 56px;
+    }
+  }
+
+  .price-slider__points-list {
+    display: none;
+  }
 }

@@ -21,11 +21,19 @@
 }
 
 @media (min-width: @tablet-width) {
+  .header {
+    padding-top: 27px;
+  }
+
+  .header__logo {
+    padding-bottom: 20px;
+  }
 
 }
 
 @media (min-width: @desktop-width) {
   .header {
+    padding-top: 0;
     display: flex;
     justify-content: flex-start;
     background-color: black;
@@ -33,7 +41,17 @@
     z-index: 20;
   }
 
+  .header__wrapper {
+    padding: 0;
+    margin: 0;
+  }
+
   .header__logo {
     margin-left: 100px;
+
+  }
+
+  .header__logo-image {
+
   }
 }

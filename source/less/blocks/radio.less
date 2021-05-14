@@ -6,14 +6,14 @@
   font-size: 18px;
   color: #283645;
   text-align: center;
-  margin-bottom: 62px;
+  margin-bottom: 56px;
   cursor: pointer;
 
   &::before {
     content: '';
     position: absolute;
     top: -9px;
-    left: 37px;
+    left: 0;
     width: 37px;
     height: 37px;
     border-radius: 50%;
@@ -25,13 +25,21 @@
     content: '';
     position: absolute;
     top: 4px;
-    left: 50px;
+    left: 13px;
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background-color: #D22856;
     display: none;
   }
+}
+
+.radio__label-text {
+  margin-left: -6px;
+}
+
+.radio__label-text--first {
+   margin-left: -36px;
 }
 
 .radio__input:hover + .radio__label::before {
@@ -54,15 +62,41 @@
 @media (min-width: @tablet-width) {
   .radio__label {
     text-align: left;
-    margin-bottom: 55px;
-    margin-left: 120px;
+    margin-bottom: 57px;
+    margin-left: 107px;
 
     &::before {
-      left: -61px;
+      left: -67px;
+      top: -12px;
     }
 
     &::after {
-      left: -48px;
+      left: -54px;
+      top: 1px;
     }
+  }
+
+  .radio__label-text--first {
+    margin-left: -6px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .radio__label {
+    &::before {
+      left: -35px;
+    }
+
+    &::after {
+      left: -22px;
+    }
+  }
+
+  .radio__label-text--first {
+    margin-left: 26px;
+  }
+
+  .radio__label-text {
+    margin-left: 26px;
   }
 }

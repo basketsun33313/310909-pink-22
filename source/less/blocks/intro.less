@@ -1,5 +1,4 @@
 .intro {
-  margin-top: 7px;
   text-align: center;
   background-color: #1D2631;
 
@@ -76,13 +75,14 @@
     position: relative;
     z-index: 10;
     width: 250px;
+    margin-bottom: 12px;
 }
 
 .intro__button {
   display: block;
   margin: 0 auto;
   width: 280px;
-  font-weight: bold;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 18px;
   color: white;
   border: 3px solid white;
@@ -90,7 +90,7 @@
   background-color: transparent;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   cursor: pointer;
 
   &:hover,
@@ -113,7 +113,8 @@
   justify-content: flex-start;
   align-items: center;
   width: 204px;
-  margin-left: -80px;
+  margin-left: -71px;
+  margin-bottom: 17px;
 }
 
 .intro__item {
@@ -121,12 +122,14 @@
 }
 
 .intro__description {
-  font-style: normal;
-  font-weight: 300;
+  width: 280px;
+  margin: 0 auto;
+  font-family: "Open Sans Light", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: white;
   text-align: center;
+  padding-bottom: 32px;
 }
 
 @media (min-width: @tablet-width) {
@@ -156,7 +159,7 @@
     left: 50%;
     width: 660px;
     height: 545px;
-    background: url("../img/phone-tablet.png") no-repeat bottom center;
+    background: url("../img/phone-screen-tablet-index.png") no-repeat bottom center;
     margin-left: -330px;
     z-index: 10;
   }
@@ -166,20 +169,8 @@
     z-index: 20;
     position: relative;
     width: 40%;
-    padding-top: 80px;
+    padding-top: 93px;
     padding-left: 2px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 195px;
-      height: 346px;
-      top: 117px;
-      left: 352px;
-      background: url("../img/screen.png") no-repeat;
-      background-size: 100%;
-    }
   }
 
   .intro__heading {
@@ -213,7 +204,7 @@
 
   .intro__list {
     margin-left: -34px;
-    margin-bottom: 10px;
+    margin-bottom: 28px;
   }
 
   .intro__description {
@@ -223,16 +214,29 @@
     font-weight: 300;
     font-size: 18px;
     line-height: 24px;
-    padding-bottom: 118px;
+    padding-bottom: 116px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .intro__wrapper {
-    &::before {
-      left: 587px;
-      top: 158px;
+  .intro {
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      bottom: 0;
+      left: 50%;
+      width: 1050px;
+      height: 645px;
+      background: url("../img/phone-screen-desktop-index.png") no-repeat bottom center;
+      margin-left: -455px;
+      z-index: 10;
     }
+  }
+
+  .intro__wrapper {
+
   }
 
   .intro__heading-text {

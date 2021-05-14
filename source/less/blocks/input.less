@@ -1,3 +1,7 @@
+.input {
+  padding: 0 20px;
+}
+
 .input__label {
   display: block;
   font-style: normal;
@@ -6,14 +10,19 @@
   color: #D22856;
   margin-bottom: 14px;
   text-transform: uppercase;
+  margin-left: 24px;
 }
 
 .input__text {
-  width: 90%;
-  padding: 20px 0 20px 20px;
-  margin-bottom: 29px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 19px 0 19px 20px;
+  margin-bottom: 23px;
   border: 2px solid #E5E5E5;
   border-radius: 1px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  color: #283645;
 
   &:hover,
   &:focus {
@@ -31,7 +40,7 @@
   font-weight: normal;
   font-size: 14px;
   color: #D22856;
-  margin-bottom: 17px;
+  margin-bottom: 14px;
   margin-left: 25px;
   text-transform: uppercase;
 }
@@ -39,9 +48,12 @@
 .input__text-tel {
   width: 90%;
   padding: 19px 0 20px 20px;
-  margin-bottom: 29px;
+  margin-bottom: 24px;
   border: 2px solid #E5E5E5;
   border-radius: 1px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  color: #283645;
 
   &:hover,
   &:focus {
@@ -59,7 +71,7 @@
   font-weight: normal;
   font-size: 14px;
   color: #D22856;
-  margin-bottom: 17px;
+  margin-bottom: 13px;
   margin-left: 25px;
   text-transform: uppercase;
 }
@@ -70,6 +82,9 @@
   margin-bottom: 29px;
   border: 2px solid #E5E5E5;
   border-radius: 1px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  color: #283645;
 
   &:hover,
   &:focus {
@@ -85,16 +100,37 @@
   .input {
     display: flex;
     align-items: center;
-    margin-bottom: 23px;
+    margin-bottom: 30px;
     padding-top: 3px;
+    padding: 0;
   }
 
   .input__label {
+    margin: 0;
     margin-right: 20px;
+    margin-top: -20px;
+  }
+
+  .input__label-tel {
+    margin-bottom: 8px;
+    margin-left: 18px;
+  }
+
+  .input__label-email {
+    margin-left: 18px;
+    margin-bottom: -4px;
   }
 
   .input__text {
     font-size: 18px;
+  }
+
+  .input__text-tel {
+    margin-bottom: 17px;
+  }
+
+  .input__text-email {
+    margin-bottom: 15px;
   }
 
   .input__tel {
@@ -153,5 +189,46 @@
       height: 13px;
       background: url("../img/mail-icon.svg") no-repeat;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .input {
+    padding: 0;
+  }
+
+  .input__tel {
+    margin-bottom: 0;
+    &::before {
+      top: 2px;
+      right: 1px;
+    }
+
+    &::after {
+      top: 21px;
+      right: 20px;
+    }
+  }
+
+  .input__email {
+    margin-bottom: 0;
+    &::before {
+      top: 1px;
+      right: 1px;
+    }
+
+    &::after {
+      top: 24px;
+      right: 21px;
+    }
+  }
+
+  .input__text-tel {
+    width: 350px;
+  }
+
+  .input__text-email {
+    width: 350px;
+    margin-bottom: 29px;
   }
 }
