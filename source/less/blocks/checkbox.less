@@ -5,7 +5,7 @@
   font-weight: normal;
   font-size: 18px;
   color:  #283645;
-  margin-bottom: 50px;
+  margin-bottom: 62px;
   cursor: pointer;
 
   &::before {
@@ -35,6 +35,10 @@
   }
 }
 
+.checkbox__label:nth-child(6) {
+  margin-bottom: 50px;
+}
+
 .checkbox__input:hover + .checkbox__label::before {
   border-color: #283645;
 }
@@ -52,7 +56,7 @@
 }
 
 .checkbox__label-text {
-  margin-left: 50px;
+  margin-left: 60px;
 }
 
 @media (min-width: @tablet-width) {
@@ -66,5 +70,9 @@
     &::after {
       left: 0;
     }
+  }
+
+  .checkbox__label-text {
+    margin-left: 50px;
   }
 }

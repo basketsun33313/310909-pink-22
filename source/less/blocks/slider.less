@@ -1,5 +1,5 @@
 .slider {
-  padding-top: 50px;
+  padding-top: 45px;
 }
 
 .slider__list {
@@ -17,16 +17,21 @@
 }
 .slider__item-heading {
   .indents-null();
-  font-weight: bold;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 18px;
+  padding-bottom: 20px;
 }
 
 .slider__item-description {
+  .indents-null();
+  width: 280px;
+  margin: 0 auto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+  padding-bottom: 32px;
 }
 
 .slider__list-point {
@@ -35,7 +40,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 78px;
+  transform: translateX(8px);
 }
 
 .slider__item-point {
@@ -76,6 +82,7 @@
 @media (min-width: @tablet-width) {
   .slider {
     padding: 0 20px;
+    padding-top: 18px;
   }
 
   .slider__item--active {
@@ -107,16 +114,18 @@
   }
 
   .slider__item-description {
+    width: 620px;
     font-family: "Open Sans";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 35px;
   }
 
   .slider__list-point {
     margin-top: 45px;
+    margin-bottom: 54px;
   }
 }
 

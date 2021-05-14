@@ -25,6 +25,10 @@
       <nav class="header__navigation navigation">
         <div class="navigation__wrapper">
           <button class="navigation__toggle" type="button">
+            <svg width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.8487 1.37761e-06L0 20.8487L2.15131 23L23 2.15131L20.8487 1.37761e-06Z"/>
+              <path d="M2.15131 0L0 2.15131L20.8487 23L23 20.8487L2.15131 0Z"/>
+              </svg>
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="navigation__list">
@@ -44,23 +48,22 @@
             <li class="navigation__item">
               <a class="navigation__link" href="#">Html academy</a>
             </li>
-
           </ul>
         </div>
       </nav>
     </header>
-
     <main class="filters">
 
       <section class="filters-title">
-        <h2 class="filters-title__heading">Конкурс на самое<br>безбашенное<br> путешествие с Пинк
+        <h2 class="filters-title__heading">Конкурс на самое безбашенное путешествие с Пинк
         </h2>
       </section>
 
       <form class="form-order" action="https://echo.htmlacademy.ru" method="POST" enctype="multipart/form-data" autocomplete="off">
         <h2 class="form-order__heading">Поделитесь своей историей и получите
           шанс выиграть ценный приз — 1000
-          миль на вашу бонусную карту!</h2>
+          миль на вашу бонусную карту!<span class="form-order__heading-text">Пожалуйста, заполните форму ниже:</span>
+        </h2>
           <div class="form-order__wrapper-box">
             <div class="form-order__wrapper">
               <section class="form-order__group form-order__group--input">
@@ -80,6 +83,7 @@
               <div class="form-order__wrapper-border form-order__wrapper-border--checkbox">
                 <section class="form-order__group-checkbox">
                   <h2 class="form-order__heading-checkbox">Ваши безбашенные достижения в путешествии</h2>
+                  <div class="form-order__wrapper-checkbox">
                     <div class="checkbox">
                       <input class="visually-hidden checkbox__input" type="checkbox" name="selfi" id="selfi" checked>
                       <label class="checkbox__label" for="selfi">
@@ -116,6 +120,7 @@
                         <span class="checkbox__label-text">Разгромил отель</span>
                     </label>
                     </div>
+                  </div>
                 </section>
               </div>
 
@@ -136,15 +141,21 @@
                   <h2 class="form-order__heading-radio">С каким приложением путешествовали?</h2>
                     <div class="radio">
                       <input class="visually-hidden radio__input" type="radio" name="radiopink" id="iOS" checked>
-                      <label class="radio__label" for="iOS">Pink для iOS</label>
+                      <label class="radio__label" for="iOS">
+                       <span class="radio__label-text radio__label-text--first">Pink для iOS</span>
+                      </label>
                     </div>
                     <div class="radio">
                       <input class="visually-hidden radio__input" type="radio" name="radiopink" id="Android">
-                      <label class="radio__label" for="Android">Pink на Android</label>
+                      <label class="radio__label" for="Android">
+                        <span class="radio__label-text">Pink на Android</span>
+                      </label>
                     </div>
                     <div class="radio">
                       <input class="visually-hidden radio__input" type="radio" name="radiopink" id="Windows">
-                      <label class="radio__label" for="Windows">Windows Phone</label>
+                      <label class="radio__label" for="Windows">
+                        <span class="radio__label-text">Windows Phone</span>
+                      </label>
                     </div>
                 </section>
               </div>
@@ -153,18 +164,16 @@
                   <h2 class="form-order__heading-textarea">Опишите свои эмоции</h2>
                     <div class="textarea">
                       <label class="textarea__label" for="textarea"></label>
-                      <textarea class="textarea__input" name="textarea" id="textarea" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                      <textarea class="textarea__input" name="textarea" id="textarea" cols="20" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                     </div>
                 </section>
               </div>
               <div class="form-order__wrapper-button">
                 <button class="filters__button-submit" type="submit">Отправить форму</button>
-                <p class="filters__description"><span class="filters__span-description">*</span> — обязательные поля</p>
+                <p class="filters__description"><span class="filters__span-description">*</span> — обязательные <span class="filters__visible-span">для заполнения</span> поля</p>
               </div>
             </div>
           </div>
-
-
       </form>
 
     </main>
@@ -208,6 +217,31 @@
         </a>
       </p>
     </footer>
-
+    <div class="modal-succes">
+      <h2 class="modal-succes__heading">
+        Ваша заявка отправлена
+      </h2>
+      <p class="modal-succes__description">
+        Спасибо за ваше участие, ваша заявка
+        уже поступила к нам. В ближайшее
+        время мы рассмотрим ее и
+        оповестим вас.
+      </p>
+      <div class="modal-succes__wrapper-button">
+        <button class="modal-succes__button" type="button">Закрыть окно</button>
+      </div>
+    </div>
+    <div class="modal-failed">
+      <h2 class="modal-failed__heading">
+        Что-то пошло не так!
+      </h2>
+      <p class="modal-failed__description">
+        Проверьте поля, выделенные красным,
+        скорее всего вы забыли их заполнить
+      </p>
+      <div class="modal-failed__wrapper-button">
+        <button class="modal-failed__button" type="button">Ок</button>
+      </div>
+    </div>
   </body>
 </html>

@@ -5,7 +5,7 @@
 .navigation__toggle {
   position: absolute;
   top: 23px;
-  right: 21px;
+  right: 27px;
   width: 23px;
   height: 23px;
   border: none;
@@ -36,8 +36,8 @@
 }
 
 .navigation__link {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 21px;
+  padding-bottom: 21px;
   display: block;
   color: white;
   text-decoration: none;
@@ -61,7 +61,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .navigation {
+    padding-top: 39px;
+  }
 
+  .navigation__toggle {
+    top: 42px;
+    right: 28px;
+  }
 }
 
 @media (min-width: @desktop-width) {
