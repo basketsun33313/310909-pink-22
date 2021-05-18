@@ -5,20 +5,21 @@
     <meta name="description" content="Pink-сервис для съёмки с розовым фильтром">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <link rel="preload" href="./fonts/opensans.woff" as="font" />
     <link rel="preload" href="./fonts/opensans.woff2" as="font" />
     <link rel="preload" href="./fonts/opensansbold.woff" as="font" />
     <link rel="preload" href="./fonts/opensansbold.woff2" as="font" />
     <link rel="preload" href="./fonts/opensanslight.woff" as="font" />
     <link rel="preload" href="./fonts/opensanslight.woff2" as="font" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="body">
     <header class="header">
       <a class="header__logo">
         <picture>
-          <source srcset="./img/logoDesktop.svg" media="(min-width: 1150px)">
-          <source srcset="./img/logoTablet.svg" media="(min-width: 680px)">
+          <source srcset="./img/logoDesktop.svg" media="(min-width: 1200px)">
+          <source srcset="./img/logoTablet.svg" media="(min-width: 660px)">
           <img class="header__logo-image" src="img/logomobile.svg" alt="Логотип сайта">
         </picture>
       </a>
@@ -38,15 +39,15 @@
             </li>
 
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Фотографии</a>
+              <a class="navigation__link" href="catalog.html">Фотографии</a>
             </li>
 
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Конкурс</a>
+              <a class="navigation__link" href="form.html">Конкурс</a>
             </li>
 
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Html academy</a>
+              <a class="navigation__link" href="https://www.htmlacademy.ru">Html academy</a>
             </li>
           </ul>
         </div>
@@ -60,18 +61,24 @@
           <span class="intro__heading-text">Взгляните на жизнь иначе!</span>
         </h1>
         <label class="intro__label visually-hidden" for="download-file"></label>
-        <button class="intro__button" type="button" id="download-file">Скачать приложение</button>
+        <a class="intro__button" type="button" href="https://www.apple.com/ru/app-store/" id="download-file">Скачать приложение</a>
         <ul class="intro__list">
           <li class="intro__item intro__item--apple">
-            <img src="./img/apple-logo.svg" alt="For iphone">
+            <a class="intro__item-link" href="#">
+              <img src="./img/apple-logo.svg" alt="For iphone">
+            </a>
           </li>
 
           <li class="intro__item intro__item--android">
-            <img src="./img/android-logo.svg" alt="For android">
+            <a class="intro__item-link" href="#">
+              <img src="./img/android-logo.svg" alt="For android">
+            </a>
           </li>
 
           <li class="intro__item intro__item--microsoft">
-            <img src="./img/microsoft-logo.svg" alt="For microsoft">
+            <a class="intro__item-link" href="#">
+              <img src="./img/microsoft-logo.svg" alt="For microsoft">
+            </a>
           </li>
         </ul>
         <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>

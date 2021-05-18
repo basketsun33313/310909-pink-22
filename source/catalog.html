@@ -5,50 +5,54 @@
     <meta name="description" content="Pink-сервис для съёмки с розовым фильтром">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <link rel="preload" href="./fonts/opensans.woff" as="font" />
     <link rel="preload" href="./fonts/opensans.woff2" as="font" />
     <link rel="preload" href="./fonts/opensansbold.woff" as="font" />
     <link rel="preload" href="./fonts/opensansbold.woff2" as="font" />
     <link rel="preload" href="./fonts/opensanslight.woff" as="font" />
     <link rel="preload" href="./fonts/opensanslight.woff2" as="font" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-  <header class="header">
-    <a class="header__logo">
-      <picture>
-        <source srcset="./img/logoDesktop.svg" media="(min-width: 1150px)">
-        <source srcset="./img/logoTablet.svg" media="(min-width: 680px)">
-        <img class="header__logo-image" src="img/logomobile.svg" alt="Логотип сайта">
-      </picture>
-    </a>
-    <nav class="header__navigation navigation">
-      <div class="navigation__wrapper">
-        <button class="navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="navigation__list">
+    <header class="header">
+      <a class="header__logo">
+        <picture>
+          <source srcset="./img/logoDesktop.svg" media="(min-width: 1200px)">
+          <source srcset="./img/logoTablet.svg" media="(min-width: 660px)">
+          <img class="header__logo-image" src="img/logomobile.svg" alt="Логотип сайта">
+        </picture>
+      </a>
+      <nav class="header__navigation navigation">
+        <div class="navigation__wrapper">
+          <button class="navigation__toggle" type="button">
+            <svg width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.8487 1.37761e-06L0 20.8487L2.15131 23L23 2.15131L20.8487 1.37761e-06Z"/>
+              <path d="M2.15131 0L0 2.15131L20.8487 23L23 20.8487L2.15131 0Z"/>
+              </svg>
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="navigation__list">
 
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Главная</a>
-          </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="index.html">Главная</a>
+            </li>
 
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Фотографии</a>
-          </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Фотографии</a>
+            </li>
 
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Конкурс</a>
-          </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="form.html">Конкурс</a>
+            </li>
 
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Html academy</a>
-          </li>
-
-        </ul>
-      </div>
-    </nav>
-  </header>
+            <li class="navigation__item">
+              <a class="navigation__link" href="https://www.htmlacademy.ru">Html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
   <main class="catalog">
     <section class="catalog-promo">
       <h1 class="catalog-promo__heading">Фотографии пользователей</h1>
@@ -62,86 +66,124 @@
     <section class="catalog-photo">
 
       <ul class="catalog-photo__list">
-        <li class="catalog-photo__item">
-          <img class="catalog-photo__item-image catalog-photo__item-image--ponoram" src="img/panorama-mobile.jpg" alt="Панорама дня">
+        <li class="catalog-photo__item catalog-photo__item--ponoram">
+          <picture>
+            <source srcset="./img/panorama-desktop@1x.jpg" media="(min-width: 1200px)">
+            <source srcset="./img/panorama-tablet@1x.jpg" media="(min-width: 660px)" height="509px">
+            <img class="catalog-photo__item-image catalog-photo__item-image--panoram" src="./img/panorama-mobile@1x.jpg" alt="Панорама дня">
+          </picture>
           <div class="catalog-photo__wrapper-background">
-            <div class="catalog-photo__wrapper-text">
-              <h3 class="catalog-photo__item-heading">Анна<span class="catalog-photo__item-time">(5 минут назад)</span></h3>
+            <div class="catalog-photo__wrapper-text catalog-photo__wrapper-text--panoram">
+              <div class="catalog-photo__wrapper-ponoram-heading">
+                <h3 class="catalog-photo__item-heading">Анна<span class="catalog-photo__item-time">(5 минут назад)</span></h3>
+                <p class="catalog-photo__item-likes catalog-photo__item-likes--ponoram-tablet">Нравится: 215</p>
+              </div>
               <p class="catalog-photo__item-description">Прыгать или нет? Напишите в
-                комментарии свой совет и
+                комментарии свой совет и<br class="catalog-photo__item-text-padding">
                 смотрите прямую трансляцию в
                 перископе, задавайте свои вопросы!</p>
-              <p class="catalog-photo__item-likes">Нравится: 215</p>
+              <p class="catalog-photo__item-likes catalog-photo__item-likes--panoram">Нравится: 215</p>
             </div>
           </div>
         </li>
-        <li class="catalog-photo__item">
-          <div class="catalog-photo__wrapper-background">
-            <img class="catalog-photo__item-image" src="./img/photo-1-mobile.jpg" alt="Панорама дня">
+        <div class="catalog-photo__list-wrapper">
+          <li class="catalog-photo__item catalog-photo__item--width">
+            <div class="catalog-photo__wrapper-background">
+              <picture>
+                <source srcset="./img/photo-1-desktop@1x.jpg" media="(min-width: 1200px)">
+                <source srcset="./img/photo-1-tablet@1x.jpg" media="(min-width: 660px)" height="300px" width="300px">
+                <img class="catalog-photo__item-image" src="./img/photo-1-mobile@1x.jpg" alt="Машина">
+              </picture>
+
+                <div class="catalog-photo__wrapper-text">
+                  <h3 class="catalog-photo__item-heading">Левон<span class="catalog-photo__item-time">(5 часов назад)</span></h3>
+                  <p class="catalog-photo__item-description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                  <p class="catalog-photo__item-likes">Нравится: 356</p>
+                </div>
+            </div>
+          </li>
+          <li class="catalog-photo__item catalog-photo__item--width">
+            <div class="catalog-photo__wrapper-background">
+              <picture>
+                <source srcset="./img/photo-2-desktop@1x.jpg" media="(min-width: 1200px)">
+                <source srcset="./img/photo-2-tablet@1x.jpg" media="(min-width: 660px)" height="300px" width="300px">
+                <img class="catalog-photo__item-image" src="./img/photo-2-mobile@1x.jpg" alt="Барабанная установка">
+              </picture>
               <div class="catalog-photo__wrapper-text">
-                <h3 class="catalog-photo__item-heading">Левон<span class="catalog-photo__item-time">(5 часов назад)</span></h3>
-                <p class="catalog-photo__item-description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <p class="catalog-photo__item-likes">Нравится: 356</p>
+                <h3 class="catalog-photo__item-heading">Антон<span class="catalog-photo__item-time">(12 часов назад)</span></h3>
+                <p class="catalog-photo__item-description catalog-photo__item-description--indent">Соседи будут рады!</p>
+                <p class="catalog-photo__item-likes">Нравится: 666</p>
               </div>
-          </div>
-        </li>
-        <li class="catalog-photo__item">
-          <div class="catalog-photo__wrapper-background">
-            <img class="catalog-photo__item-image" src="./img/photo-2-mobile.jpg" alt="Панорама дня">
-            <div class="catalog-photo__wrapper-text">
-              <h3 class="catalog-photo__item-heading">Антон<span class="catalog-photo__item-time">(12 часов назад)</span></h3>
-              <p class="catalog-photo__item-description catalog-photo__item-description--indent">Соседи будут рады!</p>
-              <p class="catalog-photo__item-likes">Нравится: 666</p>
             </div>
-          </div>
-        </li>
-        <li class="catalog-photo__item">
-          <div class="catalog-photo__wrapper-background">
-            <img class="catalog-photo__item-image" src="./img/photo-3-mobile.jpg" alt="Панорама дня">
-            <div class="catalog-photo__wrapper-text">
-              <h3 class="catalog-photo__item-heading">Борис<span class="catalog-photo__item-time">(20 часов назад)</span></h3>
-              <p class="catalog-photo__item-description">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <p class="catalog-photo__item-likes">Нравится: 215</p>
-            </div>
-          </div>
-        </li>
-        <li class="catalog-photo__item">
-          <div class="catalog-photo__wrapper-background">
-            <img class="catalog-photo__item-image" src="./img/photo-4-mobile.jpg" alt="Панорама дня">
-            <div class="catalog-photo__wrapper-text">
-              <h3 class="catalog-photo__item-heading">Сергей<span class="catalog-photo__item-time">(25 часов назад)</span></h3>
-              <p class="catalog-photo__item-description catalog-photo__item-description--indent">Самая кубанская в мире!</p>
-              <p class="catalog-photo__item-likes">Нравится: 4</p>
-            </div>
-          </div>
-        </li>
-        <li class="catalog-photo__item">
-          <div class="catalog-photo__wrapper-background">
-            <img class="catalog-photo__item-image" src="./img/photo-5-mobile.jpg" alt="Панорама дня">
-            <div class="catalog-photo__wrapper-text">
-              <h3 class="catalog-photo__item-heading">Максим<span class="catalog-photo__item-time">(40 часов назад)</span></h3>
-              <p class="catalog-photo__item-description">Где снег-то?</p>
-              <p class="catalog-photo__item-likes">Нравится: 150</p>
-            </div>
-          </div>
-        </li>
-        <li class="catalog-photo__item">
-          <div class="catalog-photo__wrapper-background">
-            <img class="catalog-photo__item-image" src="./img/photo-6-mobile.jpg" alt="Панорама дня">
+          </li>
+          <li class="catalog-photo__item catalog-photo__item--width">
+            <div class="catalog-photo__wrapper-background">
+              <picture>
+                <source srcset="./img/photo-3-desktop@1x.jpg" media="(min-width: 1200px)">
+                <source srcset="./img/photo-3-tablet@1x.jpg" media="(min-width: 660px)" height="300px" width="300px">
+                <img class="catalog-photo__item-image" src="./img/photo-3-mobile@1x.jpg" alt="Красивый вид">
+              </picture>
               <div class="catalog-photo__wrapper-text">
-                <h3 class="catalog-photo__item-heading">Надежда<span class="catalog-photo__item-time">(45 часов назад)</span></h3>
-                <p class="catalog-photo__item-description">Всем GM и взаимные лайки!</p>
-                <p class="catalog-photo__item-likes">Нравится: 2560</p>
+                <h3 class="catalog-photo__item-heading">Борис<span class="catalog-photo__item-time">(20 часов назад)</span></h3>
+                <p class="catalog-photo__item-description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <p class="catalog-photo__item-likes">Нравится: 215</p>
               </div>
-          </div>
-        </li>
+            </div>
+          </li>
+          <li class="catalog-photo__item catalog-photo__item--width">
+            <div class="catalog-photo__wrapper-background">
+              <picture>
+                <source srcset="./img/photo-4-desktop@1x.jpg" media="(min-width: 1200px)">
+                <source srcset="./img/photo-4-tablet@1x.jpg" media="(min-width: 660px)" height="300px" width="300px">
+                <img class="catalog-photo__item-image" src="./img/photo-4-mobile@1x.jpg" alt="Кубанская бахча">
+              </picture>
+              <div class="catalog-photo__wrapper-text">
+                <h3 class="catalog-photo__item-heading">Сергей<span class="catalog-photo__item-time">(25 часов назад)</span></h3>
+                <p class="catalog-photo__item-description catalog-photo__item-description--indent">Самая кубанская в мире!</p>
+                <p class="catalog-photo__item-likes">Нравится: 4</p>
+              </div>
+            </div>
+          </li>
+          <li class="catalog-photo__item catalog-photo__item--width">
+            <div class="catalog-photo__wrapper-background">
+              <picture>
+                <source srcset="./img/photo-5-desktop@1x.jpg" media="(min-width: 1200px)">
+                <source srcset="./img/photo-5-tablet@1x.jpg" media="(min-width: 660px)" height="300px" width="300px">
+                <img class="catalog-photo__item-image" src="./img/photo-5-mobile@1x.jpg" alt="Фото на макушке горы">
+              </picture>
+              <div class="catalog-photo__wrapper-text">
+                <h3 class="catalog-photo__item-heading">Максим<span class="catalog-photo__item-time">(40 часов назад)</span></h3>
+                <p class="catalog-photo__item-description">Где снег-то?</p>
+                <p class="catalog-photo__item-likes">Нравится: 150</p>
+              </div>
+            </div>
+          </li>
+          <li class="catalog-photo__item catalog-photo__item--width">
+            <div class="catalog-photo__wrapper-background">
+              <picture>
+                <source srcset="./img/photo-6-desktop@1x.jpg" media="(min-width: 1200px)">
+                <source srcset="./img/photo-6-tablet@1x.jpg" media="(min-width: 660px)" height="300px" width="300px">
+                <img class="catalog-photo__item-image" src="./img/photo-6-mobile@1x.jpg" alt="Вид из окна самолёта">
+              </picture>
+                <div class="catalog-photo__wrapper-text">
+                  <h3 class="catalog-photo__item-heading">Надежда<span class="catalog-photo__item-time">(45 часов назад)</span></h3>
+                  <p class="catalog-photo__item-description">Всем GM и взаимные лайки!</p>
+                  <p class="catalog-photo__item-likes">Нравится: 2560</p>
+                </div>
+            </div>
+          </li>
+        </div>
       </ul>
       <h2 class="catalog-photo__heading-bottom">
         Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!
       </h2>
     </section>
     <section class="catalog-edit">
-      <img class="catalog-edit__image-big" src="./img/photo-7-mobile.png" alt="фото для редактирования">
+      <picture>
+        <source srcset="./img/photo-7-desktop@1x.jpg" media="(min-width: 1200px)">
+        <source srcset="./img/photo-7-tablet@1x.jpg" media="(min-width: 660px)" height="400px">
+        <img class="catalog-photo__item-image" src="./img/photo-7-mobile@1x.jpg" alt="Зимняя дорога" height="374px">
+      </picture>
       <ul class="catalog-edit__list">
         <li class="catalog-edit__item">
           <svg class="catalog-edit__item-icon catalog-edit__item-icon--active" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
