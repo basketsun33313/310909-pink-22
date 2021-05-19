@@ -259,9 +259,49 @@
         </ul>
         <div class="contacts-map">
           <picture>
-            <source srcset="img/map-desktop.png" media="(min-width: 1150px)">
-            <source srcset="img/map-tablet.png" media="(min-width: 680px)">
-            <img class="contacts-map__image" src="img/map-mobile.png" alt="Мы на карте">
+            <source
+              type="image/webp"
+              media="(min-width: 1200px)"
+              srcset="
+                ./img/map-desktop@1x.webp 1x,
+                ./img/map-desktop@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 660px)"
+              srcset="
+                ./img/map-tablet@1x.webp 1x,
+                ./img/map-tablet@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 320px)"
+              srcset="
+                ./img/map-mobile@1x.webp 1x,
+                ./img/map-mobile@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./img/map-desktop@1x.jpg       1x,
+                ./img/map-desktop@2x.jpg       2x
+              "
+            />
+            <source
+              media="(min-width: 680px)"
+              srcset="
+                ./img/map-tablet@1x.jpg       1x,
+                ./img/map-tablet@2x.jpg       2x
+              "
+            />
+            <img
+              src="./img/map-mobile@1x.jpg"
+              srcset="./img/map-mobile@2x.jpg 2x"
+              alt="Мы на карте"
+            />
           </picture>
         </div>
       </section>
