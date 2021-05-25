@@ -1,17 +1,16 @@
 .header {
-  padding-top: 20px;
+  padding-top: 23px;
   position: relative;
-  background-color: #283645;
   z-index: 100;
 }
 
 .header__logo {
-  margin-left: 20px;
+  margin-left: 22px;
 }
 
 .header__logo-image {
   &:hover {
-    color: #D22856;
+    color: #d22856;
   }
 
   &:active {
@@ -28,7 +27,6 @@
   .header__logo {
     padding-bottom: 20px;
   }
-
 }
 
 @media (min-width: @desktop-width) {
@@ -36,9 +34,26 @@
     padding-top: 0;
     display: flex;
     justify-content: flex-start;
-    background-color: black;
-    opacity: 0.3;
-    z-index: 20;
+    background-color: transparent;
+    width: 940px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+      width: calc(100vw - 20px);
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
   }
 
   .header__wrapper {
@@ -47,11 +62,9 @@
   }
 
   .header__logo {
-    margin-left: 100px;
-
-  }
-
-  .header__logo-image {
-
+    position: relative;
+    z-index: 10;
+    padding: 0;
+    margin: 27px 0 0;
   }
 }

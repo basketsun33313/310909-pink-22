@@ -1,33 +1,61 @@
 .navigation {
+  background-color: #283645;
+}
+
+.navigation--closed {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navigation__nav {
   padding-top: 20px;
+  position: relative;
+  z-index: 10;
 }
 
 .navigation__toggle {
   position: absolute;
-  top: 23px;
-  right: 27px;
-  width: 23px;
-  height: 23px;
+  top: -27px;
+  right: 15px;
   border: none;
   background-color: transparent;
   cursor: pointer;
   fill: white;
+  display: none;
+}
 
-  &:hover,
-  &:focus {
-    outline: none;
-    fill: #D22856;
-  }
+.navigation__toggle:hover .navigation__toggle-svg {
+  outline: none;
+  fill: #d22856;
+}
 
-  &:active {
-    outline: none;
-  }
+.navigation__toggle:active .navigation__toggle-svg {
+  outline: none;
+}
+
+.navigation--v .navigation__toggle {
+  display: block;
+}
+
+.navigation--v .navigation__toggle-menu {
+  display: none;
+}
+
+.navigation--closed .navigation__toggle-menu {
+  display: block;
+}
+
+.navigation--closed .navigation__toggle-cross {
+  display: none;
 }
 
 .navigation__list {
   .indents-null();
   list-style: none;
   border-top: 1px solid black;
+}
+
+.navigation--closed .navigation__list {
+  display: none;
 }
 
 .navigation__item {
@@ -44,14 +72,12 @@
   text-align: center;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-style: normal;
-  font-weight: bold;
   font-size: 18px;
-  text-align: center;
   text-transform: uppercase;
 
   &:hover,
   &:focus {
-    color: #D22856;
+    color: #d22856;
   }
 
   &:active {
@@ -61,33 +87,51 @@
 }
 
 @media (min-width: @tablet-width) {
-  .navigation {
+  .navigation__nav {
     padding-top: 39px;
   }
 
   .navigation__toggle {
-    top: 42px;
-    right: 28px;
+    top: -28px;
+    right: 16px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .navigation {
-    padding: 0;
-    margin-left: 200px;
+  .navigation--closed {
+    background-color: transparent;
+  }
+
+  .navigation__nav {
+    padding: 44px 0 20px 59px;
+    margin-left: auto;
   }
 
   .navigation__list {
     display: flex;
     border: none;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
   .navigation__item {
     border: none;
-    margin-left: 50px;
+    margin-left: 79px;
+    margin-bottom: 14px;
   }
 
-  .navigation__toggle {
+  .navigation__link {
+    font-family: "Open Sans", "Arial", sans-serif;
+    text-transform: none;
+    font-weight: normal;
+    padding: 0;
+  }
+
+  .navigation--v .navigation__toggle {
     display: none;
+  }
+
+  .navigation--closed .navigation__list {
+    display: flex;
   }
 }
