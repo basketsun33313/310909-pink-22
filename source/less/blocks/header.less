@@ -1,11 +1,16 @@
 .header {
-  padding-top: 23px;
+  padding-top: 69px;
   position: relative;
   z-index: 100;
 }
 
 .header__logo {
-  margin-left: 22px;
+  margin-left: 0;
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  top: 23px;
+  left: 22px;
 }
 
 .header__logo-image {
@@ -21,11 +26,12 @@
 
 @media (min-width: @tablet-width) {
   .header {
-    padding-top: 27px;
+    padding-top: 70px;
   }
 
   .header__logo {
-    padding-bottom: 20px;
+    top: 26px;
+    left: 22px;
   }
 }
 
@@ -64,7 +70,7 @@
   .header__logo {
     position: relative;
     z-index: 10;
-    padding: 0;
-    margin: 27px 0 0;
+    top: 27px;
+    left: 0;
   }
 }

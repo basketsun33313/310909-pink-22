@@ -7,14 +7,14 @@
 }
 
 .navigation__nav {
-  padding-top: 20px;
+  padding-top: 0;
   position: relative;
   z-index: 10;
 }
 
 .navigation__toggle {
   position: absolute;
-  top: -27px;
+  top: -46px;
   right: 15px;
   border: none;
   background-color: transparent;
@@ -93,7 +93,7 @@
 
   .navigation__toggle {
     top: -28px;
-    right: 16px;
+    right: 15px;
   }
 }
 
@@ -124,7 +124,11 @@
     font-family: "Open Sans", "Arial", sans-serif;
     text-transform: none;
     font-weight: normal;
-    padding: 0;
+    padding: 0 0 10px 0;
+  }
+
+  .navigation__link--active {
+    border-bottom: 2px solid #ffffff;
   }
 
   .navigation--v .navigation__toggle {

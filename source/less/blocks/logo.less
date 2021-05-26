@@ -1,0 +1,49 @@
+.logo {
+  &:hover * .logo__pass {
+    fill: #d22856;
+  }
+
+  &:active * .logo__pass {
+    fill: #ffffff;
+  }
+
+  &:hover * .logo__pink {
+    fill: #d22856;
+  }
+
+  &:active * .logo__pink {
+    fill: #283645;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.logo__tablet {
+  display: none;
+}
+
+.logo__descktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .logo__mobile {
+    display: none;
+  }
+
+  .logo__tablet {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo__tablet {
+    display: none;
+  }
+
+  .logo__descktop {
+    display: block;
+  }
+}
