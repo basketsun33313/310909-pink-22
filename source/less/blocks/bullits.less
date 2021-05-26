@@ -1,0 +1,39 @@
+.bullits {
+  .indents-null();
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bullits__item {
+  width: 25px;
+  text-align: center;
+}
+
+.bullits__link {
+  display: inline-block;
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  background-color: #283645;
+  border-radius: 50%;
+  opacity: 0.3;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: #283645;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.bullits__link--active {
+  background-color: transparent;
+  border: 3px solid #283645;
+  opacity: 1;
+}

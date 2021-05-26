@@ -1,36 +1,11 @@
 .intro {
   text-align: center;
-  background-color: #1D2631;
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 100%;
-  //   top: -66px;
-  //   left: 0;
-  //   background: url("../img/back-mobile.jpg") no-repeat top center;
-  //   background-size: cover;
-  //   background-color: black;
-  //   padding-top: 66px;
-  // }
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   display: block;
-  //   bottom: 0;
-  //   left: 50%;
-  //   width: 320px;
-  //   height: 286px;
-  //   background: url("../img/phone-hand.png") no-repeat bottom center;
-  //   margin-left: -160px;
-  // }
+  background-color: #1d2631;
 }
 
 .intro__heading {
   position: relative;
-  .indents-null();
+  margin: 0;
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -38,16 +13,14 @@
   line-height: 120%;
   text-align: center;
   color: #ffffff;
-  padding-top: 29px;
-  padding-bottom: 300px;
-  margin-bottom: 28px;
+  padding: 24px 0 303px;
 
   &::before {
     content: "";
     position: absolute;
     width: 100%;
-    height: 100%;
-    top: -66px;
+    height: calc(100% + 69px);
+    top: -69px;
     left: 0;
     background: url("../img/back-mobile.jpg") no-repeat top center;
     background-size: cover;
@@ -68,19 +41,26 @@
   }
 }
 
+.intro__container {
+  background-color: #1d2631;
+  position: relative;
+  z-index: 20;
+  padding-top: 29px;
+}
+
 .intro__heading-text {
-    display: block;
-    margin: 0 auto;
-    font-family: "Open Sans Light";
-    position: relative;
-    z-index: 10;
-    width: 250px;
-    margin-bottom: 12px;
+  display: block;
+  margin: 0 auto;
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  position: relative;
+  z-index: 10;
+  width: 250px;
+  margin-bottom: 12px;
 }
 
 .intro__button {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 33px;
   width: 280px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 18px;
@@ -90,15 +70,15 @@
   background-color: transparent;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-bottom: 30px;
   cursor: pointer;
   text-decoration: none;
+  box-sizing: border-box;
 
   &:hover,
   &:focus {
     outline: none;
     background-color: white;
-    color: #D22856;
+    color: #d22856;
   }
 
   &:active {
@@ -130,41 +110,46 @@
   line-height: 24px;
   color: white;
   text-align: center;
-  padding-bottom: 32px;
+  padding-bottom: 30px;
 }
 
 @media (min-width: @tablet-width) {
   .intro {
     position: relative;
     padding-left: 20px;
+    min-height: 618px;
 
     &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: -66px;
-    left: 0;
-    background: url("../img/back-tablet.jpg") no-repeat top center;
-    background-size: cover;
-    background-color: black;
-    padding-top: 66px;
-    z-index: 1;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: calc(100% + 110px);
+      top: -110px;
+      left: 0;
+      background: url("../img/back-tablet.jpg") no-repeat top center;
+      background-size: cover;
+      background-color: black;
+      z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      bottom: 0;
+      left: 50%;
+      width: 660px;
+      height: 545px;
+      background: url("../img/phone-screen-tablet-index.png") no-repeat bottom center;
+      margin-left: -330px;
+      z-index: 10;
+    }
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    bottom: 0;
-    left: 50%;
-    width: 660px;
-    height: 545px;
-    background: url("../img/phone-screen-tablet-index.png") no-repeat bottom center;
-    margin-left: -330px;
-    z-index: 10;
+  .intro__container {
+    background: none;
+    padding: 0;
   }
-}
 
   .intro__wrapper {
     z-index: 20;
@@ -177,7 +162,7 @@
   .intro__heading {
     padding: 0;
     margin-left: 35px;
-
+    margin-bottom: 29px;
 
     &::before {
       display: none;
@@ -190,7 +175,7 @@
 
   .intro__heading-text {
     width: 230px;
-    font-family: "Open Sans Light";
+    font-family: "Open Sans Light", "Arial", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 40px;
@@ -200,7 +185,7 @@
   .intro__button {
     width: 300px;
     margin-bottom: 47px;
-    font-family: "Open Sans Bold";
+    font-family: "Open Sans Bold", "Arial", sans-serif;
   }
 
   .intro__list {
@@ -209,18 +194,52 @@
   }
 
   .intro__description {
-    font-family: "Open Sans Light";
+    font-family: "Open Sans Light", "Arial", sans-serif;
     width: 300px;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 24px;
-    padding-bottom: 116px;
+    margin-bottom: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .intro {
+    position: relative;
+    padding-left: 0;
+    display: flex;
+    align-items: flex-end;
+    min-height: 853px;
+    box-sizing: border-box;
+    padding-top: 120px;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: url("../img/back-tablet.jpg") no-repeat top center;
+      background-size: cover;
+      background-color: black;
+      z-index: 1;
+    }
+  }
+
+  .intro__wrapper {
+    position: relative;
+    min-height: 730px;
+    width: 940px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-right: 640px;
+    padding-top: 85px;
 
     &::after {
       content: "";
@@ -229,26 +248,43 @@
       bottom: 0;
       left: 50%;
       width: 1050px;
-      height: 645px;
+      height: 853px;
       background: url("../img/phone-screen-desktop-index.png") no-repeat bottom center;
       margin-left: -455px;
       z-index: 10;
     }
   }
 
-  .intro__wrapper {
-
+  .intro__heading {
+    padding: 0;
+    margin-left: 0;
+    margin-bottom: 35px;
+    position: relative;
+    z-index: 40;
   }
 
   .intro__heading-text {
     font-size: 50px;
+    line-height: 68px;
+    margin: 0;
+    width: auto;
   }
 
   .intro__button {
     font-size: 21px;
+    margin-bottom: 68px;
   }
 
   .intro__description {
-    margin-left: 70px;
+    margin-left: 0;
+  }
+
+  .intro__container {
+    position: relative;
+    z-index: 40;
+  }
+
+  .intro__list {
+    margin: 0 auto 47px -71px;
   }
 }

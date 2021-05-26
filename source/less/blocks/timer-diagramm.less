@@ -6,10 +6,22 @@
   .timer-diagramm {
     display: block;
     position: relative;
-    padding-top: 94px;
-    background-color:white;
+    padding-top: 0;
+    background-color: white;
     z-index: 20;
     margin-bottom: 108px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .timer-diagram__wrap {
+    position: relative;
 
     &::before {
       content: "";
@@ -31,10 +43,10 @@
       left: 39px;
       width: 170px;
       height: 170px;
-      color: #D22856;
-      border: 16px solid #D22856;
+      color: #d22856;
+      border: 16px solid #d22856;
       border-radius: 50%;
-      font-family: "Open Sans Bold";
+      font-family: "Open Sans Bold", "Arial", sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 96px;
@@ -58,7 +70,7 @@
     width: 308px;
     margin-left: 331px;
     padding-bottom: 13px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -66,44 +78,61 @@
   }
 
   .timer-diagramm__link {
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    color: #D22856;
+    color: #d22856;
     margin-left: 331px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .timer-diagramm {
+    padding-top: 125px;
+    padding-bottom: 89px;
+    background: #f2f2f2;
 
     &::before {
       width: 298px;
       height: 345px;
       background-size: 100%;
-      left: 131px;
+      left: 0;
+      top: 33px;
     }
 
     &::after {
       width: 220px;
       height: 220px;
       font-size: 120px;
-      left: 154px;
-      top: 124px;
+      left: 24px;
+      top: 105px;
     }
+  }
+
+  .timer-diagram__wrap {
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 94px;
   }
 
   .timer-diagramm__heading {
     width: 300px;
+    margin-left: 370px;
+    padding: 0;
+    margin-bottom: 25px;
   }
 
   .timer-diagramm__description {
-    width: 514px;
+    width: 527px;
     font-size: 18px;
+    margin: 0 0 20px 370px;
+    line-height: 30px;
   }
 
   .timer-diagramm__link {
     font-size: 18px;
+    margin-left: 370px;
   }
 }
