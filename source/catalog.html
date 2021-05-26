@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+  <meta charset="UTF-8">
   <meta name="keywords" content="pink, взгляните на жизнь иначе">
   <meta name="description" content="Pink-сервис для съёмки с розовым фильтром">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -18,7 +19,7 @@
 
 <body>
   <header class="header navigation">
-    <a class="logo header__logo" href="#">
+    <a class="logo header__logo" href="index.html">
       <svg width="147" height="40" viewBox="0 0 147 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g class="logo__mobile">
           <path class="logo__pass"
@@ -404,6 +405,7 @@
       </h2>
     </section>
     <section class="catalog-edit">
+      <h2 class="visually-hidden">Форма фильтров</h2>
       <div class="catalog-edit__container">
         <div class="catalog-edit__img-container">
           <picture>
@@ -434,28 +436,28 @@
         <div class="catalog-edit__filters-container">
           <ul class="catalog-edit__list">
             <li class="catalog-edit__item">
-              <a class="catalog-edit__button catalog-edit__button--active" href="#">
+              <button class="catalog-edit__button catalog-edit__button--active" type="button">
                 <svg class="catalog-edit__item-icon" width="44" height="44" viewBox="0 0 44 44"
                   xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="./img/sprite.svg#crop"></use>
                 </svg>
-              </a>
+              </button>
             </li>
             <li class="catalog-edit__item">
-              <a class="catalog-edit__button" href="#">
+              <button class="catalog-edit__button" type="button">
                 <svg class="catalog-edit__item-icon" width="48" height="43" viewBox="0 0 48 43"
                   xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="./img/sprite.svg#fill"></use>
                 </svg>
-              </a>
+              </button>
             </li>
             <li class="catalog-edit__item">
-              <a class="catalog-edit__button" href="#">
+              <button class="catalog-edit__button" type="button">
                 <svg class="catalog-edit__item-icon" width="32" height="32" viewBox="0 0 32 32"
                   xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="./img/sprite.svg#contrast"></use>
                 </svg>
-              </a>
+              </button>
             </li>
           </ul>
           <div class="catalog-edit__range catalog-edit__range--active catalog-edit__range--crop">

@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+  <meta charset="UTF-8">
   <meta name="keywords" content="pink, взгляните на жизнь иначе" />
   <meta name="description" content="Pink-сервис для съёмки с розовым фильтром" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -126,7 +127,7 @@
           <span class="intro__heading-text">Взгляните на жизнь иначе!</span>
         </h1>
         <div class="intro__container">
-          <a class="intro__button" type="button" href="https://www.apple.com/ru/app-store/" id="download-file">Скачать
+          <a class="intro__button" href="https://www.apple.com/ru/app-store/" id="download-file">Скачать
             приложение</a>
           <ul class="intro__list">
             <li class="intro__item intro__item--apple">
@@ -184,7 +185,7 @@
       </div>
     </section>
     <section class="timer-diagramm">
-      <div class="timer-diagram__wrap">
+      <div class="timer-diagramm__wrap">
         <h2 class="timer-diagramm__heading">Эффект на&nbsp;24 часа!</h2>
         <p class="timer-diagramm__description">
           Британские ученые провели исследования и доказали,
@@ -222,18 +223,19 @@
       </ul>
       <ul class="slider__list-point bullits">
         <li class="bullits__item">
-          <a class="bullits__link bullits__link--active" href="#" aria-label="Превый слайд"></a>
+          <button class="bullits__link bullits__link--active" type="button" aria-label="Превый слайд"></button>
         </li>
         <li class="bullits__item">
-          <a class="bullits__link" href="#" aria-label="Второй слайд"></a>
+          <button class="bullits__link" type="button" aria-label="Второй слайд"></button>
         </li>
         <li class="bullits__item">
-          <a class="bullits__link" href="#" aria-label="Третий слайд"></a>
+          <button class="bullits__link" type="button" aria-label="Третий слайд"></button>
         </li>
       </ul>
     </div>
 
     <section class="price">
+      <h3 class="visually-hidden">Прайс цен</h3>
       <div class="price__frame">
         <div class="price__wrapper">
           <ul class="price__headers price-headers">
@@ -245,8 +247,8 @@
             <li class="price__item">
               <ul class="price-slider">
                 <li class="price-slider__item-main">
-                  <h3 class="price-slider__item-heading">База</h3>
-                  <p class="price-slider__item-description">1,99 USD</p>
+                  <span class="price-slider__item-heading">База</span>
+                  <span class="price-slider__item-description">1,99 USD</span>
                 </li>
                 <li class="price-slider__item price-slider__item--yes">
                   <span class="price-slider__text">Розовый фильтр</span>
@@ -262,8 +264,8 @@
             <li class="price__item">
               <ul class="price-slider">
                 <li class="price-slider__item-main price-slider__item-main--active price-slider__item-main--hit">
-                  <h3 class="price-slider__item-heading">Стандарт</h3>
-                  <p class="price-slider__item-description">3,99 USD</p>
+                  <span class="price-slider__item-heading">Стандарт</span>
+                  <span class="price-slider__item-description">3,99 USD</span>
                 </li>
                 <li class="price-slider__item price-slider__item--yes">
                   <span class="price-slider__text">Розовый фильтр</span>
@@ -279,8 +281,8 @@
             <li class="price__item">
               <ul class="price-slider">
                 <li class="price-slider__item-main">
-                  <h3 class="price-slider__item-heading">АНЛИМ</h3>
-                  <p class="price-slider__item-description">9,99 USD</p>
+                  <span class="price-slider__item-heading">АНЛИМ</span>
+                  <span class="price-slider__item-description">9,99 USD</span>
                 </li>
                 <li class="price-slider__item price-slider__item--yes">
                   <span class="price-slider__text">Розовый фильтр</span>
@@ -296,15 +298,15 @@
           </ul>
         </div>
       </div>
-      <ul class="price-slider__points-list bullits">
+      <ul class="bullits">
         <li class="bullits__item">
-          <a class="bullits__link" href="#" aria-label="Превый слайд"></a>
+          <button class="bullits__link" type="button" aria-label="Превый слайд"></button>
         </li>
         <li class="bullits__item">
-          <a class="bullits__link bullits__link--active" href="#" aria-label="Второй слайд"></a>
+          <button class="bullits__link bullits__link--active" type="button" aria-label="Второй слайд"></button>
         </li>
         <li class="bullits__item">
-          <a class="bullits__link" href="#" aria-label="Третий слайд"></a>
+          <button class="bullits__link" type="button" aria-label="Третий слайд"></button>
         </li>
       </ul>
     </section>
@@ -313,17 +315,17 @@
       <h2 class="contacts__heading">Остались вопросы? Свяжитесь с нами!</h2>
       <ul class="contacts__list">
         <li class="contacts__item">
-          <h3 class="contacts__item-heading">Звоните:</h3>
-          <a class="contacts__item-link" href="tel:+7 (812) 555-66-66">+7 (812) 555-66-66</a>
+          <p class="contacts__item-heading">Звоните:</p>
+          <a class="contacts__item-link" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
         </li>
         <li class="contacts__item contacts__item--email">
-          <h3 class="contacts__item-heading">Пишите:</h3>
+          <p class="contacts__item-heading">Пишите:</p>
           <a class="contacts__item-link contacts__item-link--email"
             href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
         <li class="contacts__item contacts__item--address">
-          <h3 class="contacts__item-heading">Приезжайте в гости:</h3>
-          <address class="contacts__item-link" href="#">
+          <p class="contacts__item-heading">Приезжайте в гости:</p>
+          <address class="contacts__item-link">
             ул. Большая<br />
             Конюшенная, 19/8
           </address>

@@ -106,6 +106,30 @@
     }
   }
 
+  .slider__list {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 22px;
+      height: 41px;
+      background-image: url("../img/left-arrow.svg");
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 22px;
+      height: 41px;
+      background-image: url("../img/right-arrow.svg");
+    }
+  }
+
   .slider__item-heading {
     font-size: 24px;
 
